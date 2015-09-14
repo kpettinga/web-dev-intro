@@ -1,87 +1,185 @@
-
-
-
-
-<!-- \\\\\\\\    Review    ///////// -->
-
-	<!DOCTYPE html>
-	<!-- This tag always goes at the top of your document! -->
-
-	<html>
-		<!-- the head and body tags go inside here! -->
-	</html>
-	<!-- 
-	The html tags go right after the DOCTYPE tag.
-	They surround the <head> and the <body> tags. 
-	-->
-
+<!DOCTYPE html>
+<html>
 	<head>
-		<!-- title tags go in here! -->
+		<title>Week 3 Review</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <meta name="description" content="Demo project">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../assets/bootstrap.min.css">
+		<link rel="stylesheet" href="../assets/prism.css">
 	</head>
-	<!-- 
-	The head tags are like the brain of your website.
-	No one sees them but they do stuff like hold the title of your website 
-	-->
+	<body class="language-html">
 
-	<title>My Awesome Website</title>
-	<!-- The title tags hold the title of your website -->
+	<div class="container" style="margin-bottom: 20em;">
 
-	<body>
-		<!-- Everything that you want people to see should go between the <body> tags -->
-	</body>
+		<h1>HTML Elements Review</h1>
 
+		<br/>
+		<hr/>
+		<br/>
 
-	<h1>Heading 1</h1>
-	<h2>Heading 2</h2>
-	<h3>Heading 3</h3>
-	<h4>Heading 4</h4>
-	<h5>Heading 5</h5>
-	<h6>Heading 6</h6>
-	<!-- 
-	These are the heading tags we can choose from. 
-	'H1' is the biggest and 'H6' is the smallest. 
-	-->
-
-	
-	<p>This is a paragraph tag. Isn't it interesting!?</p>
-	<!-- 'p' tags make paragraphs -->
-
-
-	<a href="http://www.google.com">This is a link to google.</a>
-	<!-- 'a' tags make links -->
-
-
-	<img src="" />
-	<!-- 'img' tags make images -->
-
-
-
-
-<!-- \\\\\\\\    Assignment    ///////// -->
-
-Open SublimeText and create index.html on your desktop
-
-1 --- Go to File > New to create a new document.
-2 --- Go to File > Save to save the document as index.html to your desktop.
-3 --- Open Chrome and go to File > Open to open your index.html file.
-
-Create an html page with the following:
-
-1 --- Your site should have a title.
-2 --- Create 3 headings using any of the heading tags, H1 to H6.
-3 --- Create 3 paragraphs.
-4 --- Create 2 images.
-5 --- Create 2 links, one text and one image.
-
-
-
-
-<!-- \\\\\\\\    BONUS POINTS    ///////// -->
-
-1 --- Change the font size and color of your text with the 'style' attribute.
+		<p class="lead">The <code> &lt;!DOCTYPE&gt; </code> tag <em>always</em> goes at the top of your document</p>
+		<pre><code>&lt;!DOCTYPE html&gt;</code></pre>
 		
-		<!-- example using the 'style' attribute: -->
+		<br/>
+		<hr/>
+		<br/>
+
+		<p class="lead">The &lt;html&gt; tags go right after the &lt;!DOCTYPE&gt; tag.<br/>
+		They surround the &lt;head&gt; and the &lt;body&gt; tags.</p>
+		<pre><code>
+&lt;html&gt;
+	&lt;!-- the &lt;head&gt; and &lt;body&gt; tags go inside here! --&gt;
+&lt;/html&gt;
+		</code></pre>
+
+		<br/>
+		<hr/>
+		<br/>
+
+		<p class="lead">The head tags are like the brain of your website.<br/>
+		No one sees them but they do stuff like hold the title of your website </p>
+		<pre><code>
+&lt;head&gt;
+	&lt;!-- the &lt;title&gt; tags go in here! --&gt;
+&lt;/head&gt;
+		</code></pre>
+
+		<br/>
+		<hr/>
+		<br/>
+
+		<p class="lead">The title tags hold the title of your website. They go in between the &lt;head&gt; tags.</p>
+		<pre><code>
+&lt;head&gt;
+	&lt;title&gt;My Awesome Website&lt;/title&gt;
+&lt;/head&gt;
+		</code></pre>
+		
+
+		<br/>
+		<hr/>
+		<br/>
+
+		<p class="lead">The &lt;body&gt; tags <em>come after</em> the &lt;head&gt; tags.<br/>
+		Everything that you want people to see should go between the &lt;body&gt; tags.</p>
+		<pre><code>
+&lt;body&gt;
+	&lt;!-- People will see stuff in here! --&gt;
+&lt;/body&gt;
+		</code></pre>		
+
+
+		<br/>
+		<hr/>
+		<br/>
+
+		<p class="lead">These are the heading tags we can choose from.<br/>
+		&lt;H1&gt; is the biggest and &lt;H6&gt; is the smallest. </p>
+		<pre><code>
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+		</code></pre>
+		<p><strong>Result:</strong></p>
+		<h1>Heading 1</h1>
+		<h2>Heading 2</h2>
+		<h3>Heading 3</h3>
+		<h4>Heading 4</h4>
+		<h5>Heading 5</h5>
+		<h6>Heading 6</h6>
+
+		<br/>
+		<hr/>
+		<br/>
+
+		<p class="lead">We use &lt;p&gt; tags to give us <strong>p</strong>aragraphs</p>
+		<pre><code>
+&lt;p&gt;This is a paragraph tag. Isn't it interesting?&lt;/p&gt;
+		</code></pre>
+		<p><strong>Result:</strong></p>
+		<p>This is a paragraph tag. Isn't it interesting?</p>
+
+		<br/>
+		<hr/>
+		<br/>
+
+		<p class="lead">We use &lt;a&gt; tags when we want to make a link.</p>
+		<pre><code>
+&lt;a href="http://www.google.com"&gt;This is a link to google.&lt;/a&gt;
+		</code></pre>
+		<p><strong>Result:</strong></p>
+		<p><a href="http://www.google.com">This is a link to google.</a></p>
+
+		<br/>
+		<hr/>
+		<br/>
+
+		<p class="lead">We use &lt;img&gt; tags when we want to make an image.</p>
+		<pre><code>
+&lt;img src="http://www.voicesofwrestling.com/wp-content/uploads/2014/10/wrestlemania_2-1381980.png" /&gt;
+		</code></pre>
+		<p><strong>Result:</strong></p>
+		<p><img src="http://www.voicesofwrestling.com/wp-content/uploads/2014/10/wrestlemania_2-1381980.png" style="max-width: 300px;" /></p>
+
+
+		<br/>
+		<hr/>
+		<br/>
+
+		<h1>Assignment</h1>
+
+		<br/>
+
+		<h3>Open SublimeText and create index.html on your desktop</h3>
+
+		<br/>
+
+		<ol>
+			<li class="lead">Go to File > New to create a new document.</li>
+			<li class="lead">Go to File > Save to save the document as index.html to your desktop.</li>
+			<li class="lead">Open Chrome and go to File > Open to open your index.html file.</li>
+		</ol>
+
+		<br/>
+
+		<h3>Create an html page with the following:</h3>
+
+		<br/>
+
+		<ol>
+			<li class="lead">Your site should have a title.</li>
+			<li class="lead">Create 3 headings using any of the heading tags, H1 to H6.</li>
+			<li class="lead">Create 3 paragraphs.</li>
+			<li class="lead">Create 2 images.</li>
+			<li class="lead">Create 2 links, one using text and one using an image.</li>
+		</ol>
+
+		<br/>
+
+		<h2>Bonus Points</h2>
+
+		<ul>
+			<li class="lead">Change the font size and color of your text with the 'style' attribute.</li>
+		</ul>
+		
+		<pre><code>
+		&lt;!-- example using the 'style' attribute: --&gt;
+		&lt;h1 style="font-size: 50px; color: red;"&gt;This is my heading 1.&lt;/h1&gt;
+		</code></pre>
+		<p><strong>Result:</strong></p>
 		<h1 style="font-size: 50px; color: red;">This is my heading 1.</h1>
+
+	</div>
+
+	<script src="../assets/prism.js"></script>
+
+	</body>
+</html>
 
 
 
