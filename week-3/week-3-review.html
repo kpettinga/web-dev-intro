@@ -4,128 +4,281 @@
 		<title>Week 3 Review</title>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	    <meta name="description" content="Demo project">
+		<meta name="description" content="Demo project">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="../assets/bootstrap.min.css">
+		<link rel="stylesheet" href="../assets/primer.css">
 		<link rel="stylesheet" href="../assets/prism.css">
+		<link rel="stylesheet" href="../assets/octicons.css">
 	</head>
+
+	<style>
+		body {
+			font-size: 16px;
+			line-height: 1.7em;
+		}
+		code, pre {
+			font-size: 16px;	
+		}
+		.masthead {
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+			margin-bottom: 1.5rem;
+			text-align: center;
+			background-color: #4078c0;
+		}
+		.masthead .masthead-logo {
+		    display: inline-block;
+		    font-size: 1.5rem;
+		    color: #fff;
+		    float: left;
+		}
+		.masthead a {
+		    color: rgba(255,255,255,0.5);
+		}
+		.masthead-nav {
+		    float: right;
+		    margin-top: .5rem;
+		}
+		.masthead-nav a {
+		    display: inline-block;
+		}
+		.masthead-nav a:not(:last-child) {
+		    margin-right: 1.25rem;
+		}
+		.blankslate.align-left {
+			text-align: left;
+		}
+		.highlight pre,
+		.highlight pre[class*="language-"] {
+			border-radius: 0;
+			margin: 0;
+		}
+	</style>
+
 	<body class="language-html">
 
-	<div class="container" style="margin-bottom: 20em;">
+	<header class="masthead">
+		<div class="container">
+			<a href="#" class="masthead-logo">
+				<span class="mega-octicon octicon-code"></span>
+				Intro to Web Development
+			</a>
+
+			<!-- <nav class="masthead-nav">
+				<a href="/home">Home</a>
+			</nav> -->
+		</div>
+	</header>
+
+	<div class="container markdown-body" style="margin-bottom: 20em;">
+
+		<br/>
 
 		<h1>Week 3 — HTML Elements Review</h1>
 
-		<br/>
 		<hr/>
 		<br/>
 
-		<p class="lead">The <code> &lt;!DOCTYPE&gt; </code> tag <em>always</em> goes at the top of your document</p>
-		<pre><code>&lt;!DOCTYPE html&gt;</code></pre>
-		
-		<br/>
-		<hr/>
-		<br/>
+		<h2 class="text-open">Document Type</h2>
 
-		<p class="lead">The &lt;html&gt; tags go right after the &lt;!DOCTYPE&gt; tag.<br/>
-		They surround the &lt;head&gt; and the &lt;body&gt; tags.</p>
-		<pre><code>
+		<div class="columns">
+			<div class="column one-half">
+				<h3>Doctype</h3>
+				<p>The <code> &lt;!DOCTYPE html&gt; </code> tag <em>always</em> goes at the top of your document</p>
+			</div>
+			<div class="column one-half">
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+				</code></pre>
+			</div>
+		</div>
+
+		<div class="columns">
+			<div class="column one-half">
+				<h3>HTML tags</h3>
+				<p>The <code> &lt;html&gt;&lt;/html&gt; </code> tags come next.
+				Everything on your site should go inside these tags.</p>
+			</div>
+			<div class="column one-half">
+				<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 	&lt;!-- the &lt;head&gt; and &lt;body&gt; tags go inside here! --&gt;
 &lt;/html&gt;
-		</code></pre>
+				</code></pre>
+			</div>
+		</div>
 
 		<br/>
 		<hr/>
 		<br/>
 
-		<p class="lead">The head tags are like the brain of your website.<br/>
-		No one sees them but they do stuff like hold the title of your website </p>
-		<pre><code>
-&lt;head&gt;
-	&lt;!-- the &lt;title&gt; tags go in here! --&gt;
-&lt;/head&gt;
-		</code></pre>
+		<div class="columns">
+			<div class="column one-half">
+				<h2 class="text-open">The Head</h2>
+				<p>The head tags are like the brain of your website.<br/>
+				No one sees them but they do stuff like hold the title of your website </p>
+			</div>
+			<div class="column one-half">
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;!-- the &lt;title&gt; tags go in here! --&gt;
+	&lt;/head&gt;
+&lt;/html&gt;
+				</code></pre>
+			</div>
+		</div>
 
-		<br/>
-		<hr/>
-		<br/>
-
-		<p class="lead">The title tags hold the title of your website. They go in between the &lt;head&gt; tags.</p>
-		<pre><code>
+		<div class="columns">
+			<div class="column one-half">
+				<h3>Title</h3>
+				<p>The title tags hold the title of your website. They go in between the &lt;head&gt; tags.</p>
+			</div>
+			<div class="column one-half">
+				<pre><code>
 &lt;head&gt;
 	&lt;title&gt;My Awesome Website&lt;/title&gt;
 &lt;/head&gt;
-		</code></pre>
+				</code></pre>
+			</div>
+		</div>
 		
 
 		<br/>
 		<hr/>
 		<br/>
 
-		<p class="lead">The &lt;body&gt; tags <em>come after</em> the &lt;head&gt; tags.<br/>
-		Everything that you want people to see should go between the &lt;body&gt; tags.</p>
-		<pre><code>
-&lt;body&gt;
-	&lt;!-- People will see stuff in here! --&gt;
-&lt;/body&gt;
-		</code></pre>		
+		<div class="columns">
+			<div class="column one-half">
+				<h2 class="text-open">The Body</h2>
+				<p>The <code> body </code> tags <strong>COME AFTER</strong> the <code> head </code> tags.<br/>
+				Everything that you want people to see should go between the body tags.</p>
+			</div>
+			<div class="column one-half">
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;My Awesome Website&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;!-- People will see stuff in here! --&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+				</code></pre>
+			</div>
+		</div>
 
 
 		<br/>
 		<hr/>
 		<br/>
 
-		<p class="lead">These are the heading tags we can choose from.<br/>
-		&lt;H1&gt; is the biggest and &lt;H6&gt; is the smallest. </p>
-		<pre><code>
-&lt;h1&gt;Heading 1&lt;/h1&gt;
+		<div class="columns">
+			<div class="column one-half">
+				<h2 class="text-open">Headings</h2>
+				<p>These are the heading tags we can choose from.<br/>
+				<code> h1 </code> is the biggest and <code> h6 </code> is the smallest. </p>
+			</div>
+			<div class="column one-half">
+				<div class="blankslate align-left">
+					<h1>Heading 1</h1>
+					<h2>Heading 2</h2>
+					<h3>Heading 3</h3>
+					<h4>Heading 4</h4>
+					<h5>Heading 5</h5>
+					<h6>Heading 6</h6>
+				</div>
+				<div class="highlight">
+					<pre><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
 &lt;h2&gt;Heading 2&lt;/h2&gt;
 &lt;h3&gt;Heading 3&lt;/h3&gt;
 &lt;h4&gt;Heading 4&lt;/h4&gt;
 &lt;h5&gt;Heading 5&lt;/h5&gt;
-&lt;h6&gt;Heading 6&lt;/h6&gt;
-		</code></pre>
-		<p><strong>Result:</strong></p>
-		<h1>Heading 1</h1>
-		<h2>Heading 2</h2>
-		<h3>Heading 3</h3>
-		<h4>Heading 4</h4>
-		<h5>Heading 5</h5>
-		<h6>Heading 6</h6>
+&lt;h6&gt;Heading 6&lt;/h6&gt;</code></pre>
+				</div>
+			</div>
+		</div>
 
 		<br/>
 		<hr/>
 		<br/>
 
-		<p class="lead">We use &lt;p&gt; tags to give us <strong>p</strong>aragraphs</p>
-		<pre><code>
-&lt;p&gt;This is a paragraph tag. Isn't it interesting?&lt;/p&gt;
-		</code></pre>
-		<p><strong>Result:</strong></p>
-		<p>This is a paragraph tag. Isn't it interesting?</p>
+		<div class="columns">
+			<div class="column one-half">
+				<h2 class="text-open">Paragraphs</h2>
+				<p>We use <code> &lt;p&gt;&lt;/p&gt; </code> tags to give us <strong>paragraphs</strong>.</p>
+			</div>
+			<div class="column one-half">
+				<div class="blankslate align-left">
+					<p>This is a paragraph tag. Isn't it interesting?</p>
+				</div>
+				<div class="highlight">
+					<pre><code>&lt;p&gt;This is a paragraph tag. Isn't it interesting?&lt;/p&gt;</code></pre>
+				</div>
+			</div>
+		</div>
 
 		<br/>
 		<hr/>
 		<br/>
 
-		<p class="lead">We use &lt;a&gt; tags when we want to make a link.</p>
-		<pre><code>
-&lt;a href="http://www.google.com"&gt;This is a link to google.&lt;/a&gt;
-		</code></pre>
-		<p><strong>Result:</strong></p>
-		<p><a href="http://www.google.com">This is a link to google.</a></p>
+		<div class="columns">
+			<div class="column one-half">
+				<h2 class="text-open">Links</h2>
+				<p>We use <code> &lt;a&gt;&lt;/a&gt; </code> tags when we want to make a link.</p>
+			</div>
+			<div class="column one-half">
+				<div class="blankslate align-left">
+					<a href="http://www.google.com">This is a link to google.com</a>
+				</div>
+				<div class="highlight">
+					<pre><code>&lt;a href="http://www.google.com"&gt;This is a link to google.&lt;/a&gt;</code></pre>
+				</div>
+			</div>
+		</div>
 
 		<br/>
 		<hr/>
 		<br/>
 
-		<p class="lead">We use &lt;img&gt; tags when we want to make an image.</p>
-		<pre><code>
-&lt;img src="http://www.voicesofwrestling.com/wp-content/uploads/2014/10/wrestlemania_2-1381980.png" /&gt;
-		</code></pre>
-		<p><strong>Result:</strong></p>
-		<p><img src="http://www.voicesofwrestling.com/wp-content/uploads/2014/10/wrestlemania_2-1381980.png" style="max-width: 300px;" /></p>
+		<div class="columns">
+			<div class="column one-half">
+				<h2 class="text-open">Images</h2>
+				<p>We use <code> &lt;img /&gt; </code> tags when we want to make an image.</p>
+			</div>
+			<div class="column one-half">
+				<div class="blankslate align-left">
+					<img src="http://bit.ly/1KmQI9w" />
+				</div>
+				<div class="highlight">
+					<pre><code>&lt;img src="http://bit.ly/1KmQI9w" /&gt;</code></pre>
+				</div>
+			</div>
+		</div>
 
+		<br/>
+
+		<div class="columns">
+			<div class="column one-half">
+				<h3>Make it a link</h3>
+				<p>We can put an <code> &lt;img /&gt; </code> tag inside of an <code> &lt;a&gt;&lt;/a&gt; </code> tag to make it link to another website.</p>
+			</div>
+			<div class="column one-half">
+				<div class="blankslate align-left clearfix">
+					<div class="tooltipped tooltipped-n left" aria-label="I'm a link!. Click me.">
+					<a href="http://www.google.com"><img src="http://bit.ly/1KmQI9w" /></a>&nbsp;
+					</div>
+				</div>
+				<div class="highlight">
+					<pre><code>&lt;a href="http://www.google.com"&gt;
+	&lt;img src="http://bit.ly/1KmQI9w" /&gt;
+&lt;/a&gt;</code></pre>
+				</div>
+			</div>
+		</div>
 
 		<br/>
 		<hr/>
@@ -135,44 +288,39 @@
 
 		<br/>
 
-		<h3>Open SublimeText and create index.html on your desktop</h3>
-
-		<br/>
+		<h3 class="lead">Open SublimeText and create index.html on your desktop</h3>
 
 		<ol>
-			<li class="lead">Go to File > New to create a new document.</li>
-			<li class="lead">Go to File > Save to save the document as index.html to your desktop.</li>
-			<li class="lead">Open Chrome and go to File > Open to open your index.html file.</li>
+			<li>Go to <strong>File > New</strong> to create a new document.</li>
+			<li>Go to <strong>File > Save</strong> to save the document as index.html to your desktop.</li>
+			<li>Open Chrome and go to <strong>File > Open</strong> to open your index.html file.</li>
 		</ol>
 
 		<br/>
 
-		<h3>Create an html page with the following:</h3>
-
-		<br/>
+		<h3 class="lead">Create an html page with the following:</h3>
 
 		<ol>
-			<li class="lead">Your site should have a title.</li>
-			<li class="lead">Create 3 headings using any of the heading tags, H1 to H6.</li>
-			<li class="lead">Create 3 paragraphs.</li>
-			<li class="lead">Create 2 images.</li>
-			<li class="lead">Create 2 links, one using text and one using an image.</li>
+			<li>Your site should have a title.</li>
+			<li>Create 3 <strong>headings</strong> using any of the heading tags, H1 to H6.</li>
+			<li>Create 3 <strong>paragraphs</strong>.</li>
+			<li>Create 2 <strong>images</strong>.</li>
+			<li>Create 2 <strong>links</strong>, one using text and one using an image.</li>
 		</ol>
 
 		<br/>
 
 		<h2>Bonus Points</h2>
 
-		<ul>
-			<li class="lead">Change the font size and color of your text with the 'style' attribute.</li>
-		</ul>
+		<p class="lead">Change the font size and color of your text with the 'style' attribute.</p>
 		
-		<pre><code>
-		&lt;!-- example using the 'style' attribute: --&gt;
-		&lt;h1 style="font-size: 50px; color: red;"&gt;This is my heading 1.&lt;/h1&gt;
-		</code></pre>
-		<p><strong>Result:</strong></p>
-		<h1 style="font-size: 50px; color: red;">This is my heading 1.</h1>
+		<div class="docs-example clearfix">
+			<h1 style="font-size: 50px; color: red;">This is my heading 1.</h1>
+		</div>
+		<div class="highlight">
+			<pre><code>&lt;h1 style="font-size: 50px; color: red;"&gt;This is my heading 1.&lt;/h1&gt;</code></pre>
+		</div>
+		
 
 	</div>
 
