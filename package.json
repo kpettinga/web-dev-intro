@@ -1,0 +1,10 @@
+{
+  "name": "WebDevIntro",
+  "version": "1.0.0",
+  "description": "An introduction to web development",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kpettinga/web-dev-intro"
+  },
+  "author": "Kirk Pettinga"
+}

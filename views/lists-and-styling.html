@@ -1,0 +1,239 @@
+<div class="row markdown-body" style="margin-bottom: 20em;">
+
+	<div class="column small-12">
+
+		<br/>
+
+		<h1>Lists and Style</h1>
+		<h3 class="subheader">Week 5</h3>
+
+		<hr/>
+		<br/>
+
+		<h3 class="text-highlight">Lists</h3>
+
+		<br/>
+
+		<div class="row">
+			<div class="column large-4">
+				<h4 class="h4">Ordered Lists</h4>
+				<p>Ordered lists use numbers. Use the <code prism> &lt;ol&gt; </code> tag to create Ordered Lists.</p>
+			</div>
+			<div class="column large-7 large-offset-1">
+				<div class="blankslate panel">
+					<ol>
+						<li>list item</li>
+						<li>list item</li>
+						<li>list item</li>
+					</ol>
+				</div>
+				<pre class="line-numbers"><code prism>&lt;ol&gt;
+	&lt;li&gt;list item&lt;/li&gt;
+	&lt;li&gt;list item&lt;/li&gt;
+	&lt;li&gt;list item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column large-4">
+				<h4 class="h4">Unordered Lists</h4>
+				<p>Unordered lists used bullets. Use the <code prism> &lt;ul&gt; </code> tag to create Unordered Lists.</p>
+			</div>
+			<div class="column large-7 large-offset-1">
+				<div class="blankslate panel">
+					<ul>
+						<li>list item</li>
+						<li>list item</li>
+						<li>list item</li>
+					</ul>
+				</div>
+				<pre class="line-numbers"><code prism>&lt;ul&gt;
+	&lt;li&gt;list item&lt;/li&gt;
+	&lt;li&gt;list item&lt;/li&gt;
+	&lt;li&gt;list item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column large-4">
+				<h4 class="h4">Nesting Lists</h4>
+				<p>It's even possible to nest lists <em>within</em> lists. Here's an example of an unordered list inside of an ordered list.</p>
+			</div>
+			<div class="column large-7 large-offset-1">
+				<div class="blankslate panel">
+					<ol>
+						<li>list item
+							<ul>
+								<li>list item</li>
+								<li>list item</li>
+								<li>list item</li>
+							</ul>
+						</li>
+						<li>list item</li>
+						<li>list item</li>
+					</ol>
+				</div>
+				<pre class="line-numbers"><code prism>&lt;ol&gt;
+	&lt;li&gt;list item
+		&lt;ul&gt;
+			&lt;li&gt;list item&lt;/li&gt;
+			&lt;li&gt;list item&lt;/li&gt;
+			&lt;li&gt;list item&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/li&gt;
+	&lt;li&gt;list item&lt;/li&gt;
+	&lt;li&gt;list item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+			</div>
+		</div>
+
+		<br/>
+		<hr/>
+		<br/>
+
+		<h3 class="text-highlight">Styling the fonts</h3>
+		<p>With the <code prism>style</code> attribute, we can change the font, color, and size of our text</p>
+		
+		<br/>
+
+		<div class="row">
+			<div class="column large-4">
+				<h4 class="h4">Font Size</h4>
+				<p>Use <code prism>font-size</code> to change the size of our text.</p>
+			</div>
+			<div class="column large-7 large-offset-1">
+				<div class="blankslate panel">
+					<p style="font-size: 20px">I'm a big paragraph!</p>
+				</div>
+				<pre class="line-numbers"><code prism>&lt;p style="font-size: 20px"&gt;I'm a big paragraph!&lt;/p&gt;</code></pre>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column large-4">
+				<h4 class="h4">Font Color</h4>
+				<p>Use <code prism>color</code> to change the color of our text.</p>
+			</div>
+			<div class="column large-7 large-offset-1">
+				<div class="blankslate panel">
+					<p style="color: red">I'm a red paragraph!</p>
+				</div>
+				<pre class="line-numbers"><code prism>&lt;p style="color: red"&gt;I'm a red paragraph&lt;/p&gt;</code></pre>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column large-4">
+				<h4 class="h4">Font Family</h4>
+				<p>Use <code prism>font-family</code> to change the font of our text. Some common fonts to choose from are:<br/><br/>
+					<span style="font-family: Georgia">Georgia</span><br/>
+					<span style="font-family: Verdana">Verdana</span><br/>
+					<span style="font-family: Tahoma">Tahoma</span><br/>
+					<span style="font-family: Monaco">Monaco</span><br/>
+					<span style="font-family: Arial">Arial</span></p>
+			</div>
+			<div class="column large-7 large-offset-1">
+				<div class="blankslate panel">
+					<p style="font-family: Georgia">This paragraph uses the Georgia font.</p>
+				</div>
+				<pre class="line-numbers"><code prism>&lt;p style="font-family: Georgia"&gt;This paragarph uses the Georgia font&lt;/p&gt;</code></pre>
+			</div>
+		</div>
+
+		<br/>
+		<hr/>
+		<br/>
+
+		<h3 class="text-highlight">More Styling!</h3>
+
+		<br/>
+
+		<div class="row">
+			<div class="column large-4">
+				<h4 class="h4">Background Color</h4>
+				<p>Use <code prism>background-color</code> to change the background-color of an element.</p>
+			</div>
+			<div class="column large-7 large-offset-1">
+				<div class="blankslate panel">
+					<ul style="background-color: lightblue">
+						<li>List item</li>
+						<li>List item</li>
+						<li>List item</li>
+					</ul>
+				</div>
+				<pre class="line-numbers"><code prism>&lt;ul style="background-color: lightblue"&gt;
+	&lt;li&gt;List item&lt;/li&gt;
+	&lt;li&gt;List item&lt;/li&gt;
+	&lt;li&gt;List item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column large-4">
+				<h4 class="h4">Aligning Text</h4>
+				<p>Use <code prism>text-align</code> to change the alignment of text. You an choose from <strong>left</strong>, <strong>center</strong>, or <strong>right</strong>.</p>
+			</div>
+			<div class="column large-7 large-offset-1">
+				<div class="blankslate panel">
+					<p style="text-align: right">This is a right aligned paragraph.</p>
+				</div>
+				<pre class="line-numbers"><code prism>&lt;p style="text-align: right"&gt;This is a right aligned paragraph.&lt;/p&gt;</code></pre>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column large-4">
+				<h4 class="h4">Strong words</h4>
+				<p>Use the <code prism>&lt;strong&gt;</code> tags to make text <strong>bold</strong>.</p>
+			</div>
+			<div class="column large-7 large-offset-1">
+				<div class="blankslate panel">
+					<p>These are <strong>some strong</strong> words!</p>
+				</div>
+				<pre class="line-numbers"><code prism>&lt;p&gt;These are &lt;strong&gt;some strong&lt;/strong&gt; words!&lt;/p&gt;</code></pre>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column large-4">
+				<h4 class="h4">Emphasized words</h4>
+				<p>Use the <code prism>&lt;em&gt;</code> tags to make text <em>italics</em>.</p>
+			</div>
+			<div class="column large-7 large-offset-1">
+				<div class="blankslate panel">
+					<p><em>All I want</em> is some italic text!<p>
+				</div>
+				<pre class="line-numbers"><code prism>&lt;p&gt;&lt;em&gt;All I want&lt;/em&gt; is some italic text!&lt;p&gt;</code></pre>
+			</div>
+		</div>
+
+		<br/>
+		<hr/>
+		<br/>
+
+
+		<h1 class="text-highlight">Assignment</h1>
+
+<!-- 		<br/>
+
+		<h3 class="lead">Open SublimeText and create index.html on your desktop</h3>
+
+		<ol>
+			<li>Go to <strong>File > New</strong> to create a new document.</li>
+			<li>Go to <strong>File > Save</strong> to save the document as index.html to your desktop.</li>
+			<li>Open Chrome and go to <strong>File > Open</strong> to open your index.html file.</li>
+		</ol>
+
+		<br/>
+
+		<h3 class="lead">Create an html page with the following:</h3>
+
+		<ol>
+			<li>Your site should have a title.</li>
+			<li>Create 3 <strong>headings</strong> using any of the heading tags, H1 to H6.</li>
+			<li>Create 3 <strong>paragraphs</strong>.</li>
+			<li>Create 2 <strong>images</strong>.</li>
+			<li>Create 2 <strong>links</strong>, one using text and one using an image.</li>
+		</ol>
+ -->
+	</div>
+
+<?php include_once('../footer.php'); ?>
+
+
