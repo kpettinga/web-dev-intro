@@ -12,6 +12,7 @@
 
 	<script src="app.js"></script>
 	<script src="controllers/DefaultController.js"></script>
+	<script src="controllers/HeaderController.js"></script>
 	<script src="directives/Prism.js"></script>
 	
 	<link rel="stylesheet" href="assets/style/vendor/normalize.css">
@@ -35,16 +36,16 @@
 				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 			</ul>
 
-			<section class="top-bar-section">
+			<section class="top-bar-section" ng-controller="HeaderController">
 			<!-- Right Nav Section -->
 				<ul class="right">
 					<li class="has-dropdown">
 						<a href="#">Lessons</a>
 						<ul class="dropdown">
-							<li class=""><a href="#/home">Home</a></li>
-							<!-- <li class=""><a href="#/introduction">An Introduction</a></li> -->
-							<li class=""><a href="#/basic-elements">Basic HTML Elements</a></li>
-							<li class=""><a href="#/lists-and-styling">Lists and Styling</a></li>
+							<li ng-class="{ active : isActive('/home') }"><a href="#/home">Home</a></li>
+							<!-- <li ng-class=""><a href="#/introduction">An Introduction</a></li> -->
+							<li ng-class="{ active : isActive('/basic-elements') }"><a href="#/basic-elements"><strong>Unit 1</strong>: Basic HTML Elements</a></li>
+							<li ng-class="{ active : isActive('/lists-and-styling') }"><a href="#/lists-and-styling"><strong>Unit 2</strong>: Lists and Styling</a></li>
 						</ul>
 					</li>
 				</ul>
